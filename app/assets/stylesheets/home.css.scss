@@ -95,6 +95,7 @@ ul.navleft  {
 /* head over */
 
 .container {
+  @include border-radius(10px);
   padding: 8px;
   border:0;
   height:auto;
@@ -110,3 +111,4 @@ ul.navleft  {
   padding:8px;
   height:40px;
 }
+
