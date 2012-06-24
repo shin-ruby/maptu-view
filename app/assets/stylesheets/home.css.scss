@@ -1,0 +1,112 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SASS) here: http://sass-lang.com/
+html {
+  margin: 0;
+  padding: 0;
+  border:0;
+}
+body {
+  overflow:hidden;
+  padding:0;
+  margin:0;
+  border:0;
+  @include background-image(image_url('bgimage.jpg'));
+  overflow:auto; top:100px;
+  height:100%;
+}
+
+.clear {
+  clear:both;
+}
+
+/* container begin */
+
+
+.header {
+  width:100%;
+  height:58px;
+  margin: 0 auto;
+  background-color:#010000;
+  img {
+    float:left;
+    margin: {
+      left:20px;
+      top:6px;
+    }
+  }
+}
+
+
+ul.nav  {
+  margin: {
+    left:140px;
+    top:20px;
+  }
+  list-style: none;
+  font: {
+    family:Verdana, Geneva, sans-serif;
+    size:14px;
+  }
+  float:left;
+  a {
+    display:block;
+    padding: 0 2.0em;
+    text-decoration:none;
+    color:#FFFFFF;
+    &:hover, &:active {
+      color:#FD0000;
+      text-decoration: underline;
+    }
+  }
+  li {
+    float:left;
+    display:inline;
+  }
+}
+
+ul.navleft  {
+  list-style: none;
+  font: {
+    family:Verdana, Geneva, sans-serif;
+    size:14px;
+  }
+  float:right;
+  margin: {
+    top:8px;
+    right: 20px;
+  }
+  a {
+    display:block;
+    padding: 0 1em;
+    text-decoration:none;
+    color:#FFFFFF;
+    &:hover, &:active {
+      color:#FD0000;
+    }
+  }
+  li {
+    float:left;
+    display:inline;
+  }
+}
+
+
+/* head over */
+
+.container {
+  padding: 8px;
+  border:0;
+  height:auto;
+  width: 950px;
+  background-color: #FFFFFF;
+  margin: {
+    left: auto;
+    right: auto;
+  }
+  @include box-shadow(rgba(blue, 0.4) 0 0 25px, rgba(green, 0.2) 0 0 3px 1px inset);
+}
+#footer {
+  padding:8px;
+  height:40px;
+}

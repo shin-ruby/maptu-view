@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>闲心囧事-分享生活中有趣的事</title>
+  <%= stylesheet_link_tag "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+
+<body>
+<div class="header">
+  <a href="index.html"><%= image_tag("logo.gif") %></a>
+  <ul class="nav">
+    <li style="color: #ffffff;">分享生活中的</li>
+  	<li><a href="#">闲心</a></li>
+    <li><a href="#">囧事</a></li>
+  </ul>
+  <ul class="navleft">
+    <li><a href="./index.html">登录</a></li>
+    <li><a href="#">注册</a></li>
+  </ul>
+</div><br class="clear" />
+
+<%= yield %>
+
+<div id="footer">
+    闲心囧事-分享生活中有趣的事  沪ICP备05085548
+</div>
+</body>
+</html>
